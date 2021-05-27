@@ -1,63 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
-	<head>
-		<meta charset="utf-8">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title> Proyecto Web </title>
-	</head> 
+</head> 
+
 <body>
-<div class="container">
-<div class="row align-items-center">
-<div class="col-12 align-self-center text-center p-4">
-<h1>Gasolina</h1>
-<h2>Equipo</h2>
-<h2>Acatitla González José Ángel</h2>
-<h2>Cuellar Avila Arely</h2>
-<h2>Olguin Galvan Luisa Guadalupe</h2>
-<h2>Santamaria Casas Nahomi Abigail</h2>
-<h2>3CM51 Programación Web </h2>								
-<br>
-		
-<label for="opciones"> Selecciona el proceso a realizar: </label>
-		<select id="opciones">
-			<option value="A"> Registro de Embarque </option>
-			<option value="B"> Orden de Trabajo </option>
-			<option value="C"> Finaliza Produccion </option>
-			<option value="D"> Venta a credito </option>
-			<option value="E"> Cobro a credito </option>
-		</select><br><br>
-		
-		<p></p>
-		<div class="info"></div>
-		
-<script type = "text/javascript">
-  if (eleccion === 'A') {
-    <form method="get" action="">
-    <button type="submit">Continue</button>
-</form>
- } else if (eleccion === 'B') {
-    parrafo.textContent = 'Porfavor, indique la cantidad de Insumos a Utilizar.';
-	div.innerHTML = '<form action="ordTrabajo.php" method="post"><fieldset><legend> Ingrese datos solicitados</legend> <p><label>Numero de Empresa:<input type="int" name="idEmpresa" /></label> </p><p><label>Total Insumo A a utilizar:<input type="int" name="tInsumoA" /></label> </p><p><label>Total Insumo B a utilizar: <input type="int" name="tInsumoB" /></label></p><p><input type="submit" value="enviar"/></p></fieldset></form>';
-    div.innerHTML;
-  } else if (eleccion === 'C') {
-    parrafo.textContent = 'Porfavor, inserte el numero de total de productos terminados.';
-	div.innerHTML = '<form action="finProd.php" method="post"><fieldset><legend> Ingrese datos solicitados</legend><p><label>Numero de Empresa: <input type="int" name="idEmpresa" /></label></p><p><label>Total Productos Terminados: <input type="int" name="totProd" /></label></p><p><input type="submit" value="enviar"/></p></fieldset></form>';
-    div.innerHTML;
-  } else if (eleccion === 'D') {
-    parrafo.textContent = 'Inserte el costo del producto y la utilidad a obtener.';
-	div.innerHTML = '<form action="ventaCred.php" method="post"><fieldset><legend> Ingrese datos solicitados</legend><p><label>Número de Empresa:<input type="int" name="idEmpresa" /></label> </p><p><label>Costo del Embarque: <input type="double" name="costoEmbarque" /></label></p><p><label>Utilidad del producto: <input type="double" name="ganancia" /></label></p><p><input type="submit" value="enviar"/></p></fieldset></form>';
-    div.innerHTML;
-  } else if (eleccion === 'E') {
-    parrafo.textContent = 'Inserte la mercancia que se desea comprar .';
-	div.innerHTML = '<form action="compraCred.php" method="post"><fieldset><legend> Ingrese datos solicitados</legend><p><label>Numero de Empresa: <input type="int" name="idEmpresa" /></label></p><p><label>Total de Mercancia a Comprar: <input type="int" name="totCompra" /></label></p><p><input type="submit" value="enviar"/></p></fieldset></form>';
-    div.innerHTML;
-  } 
-else {
-    parrafo.textContent = 'NO PUSO NADA OIGA';
-  }
-}
-</script>
-</div>
-</div>	
-</div>
+	<div class="container">
+		<div class="col-2 align-items-center">
+			<div class="col-12 align-self-center text-center p-4">
+				<h1>Gasolina</h1>
+				<h2>Equipo</h2>
+				<h2>Acatitla González José Ángel</h2>
+				<h2>Cuellar Avila Arely</h2>
+				<h2>Olguin Galvan Luisa Guadalupe</h2>
+				<h2>Santamaria Casas Nahomi Abigail</h2>
+				<h2>3CM51 Programación Web </h2>								
+				<br><br><br>
+
+				<form action="clientes.html" method="get">
+				<button type="submit">Clientes.</button>
+				</form>
+				<form action="pedidos.html" method="get">
+				<button type="submit">Pedidos.</button>
+				</form>
+				<form action="entregas.html" method="get">
+				<button type="submit">Entrgas.</button>
+				</form>
+				<form action="venta.html" method="get">
+				<button type="submit">Venta por dia.</button>
+				</form>
+				<form action="recibo.html" method="get">
+				<button type="submit">Recibo.</button>
+				</form>
+
+			</div>
+		</div>	
+	</div>
+
+	<script src="app.js" charset="utf-8"></script>
 </body>
+
 </html>

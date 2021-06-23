@@ -1,47 +1,98 @@
-<?PHP
-	$hostname_localhost ="freedb.tech:3306";
-	$database_localhost ="freedbtech_progweb";
-	$username_localhost ="freedbtech_progweb";
-	$password_localhost ="xxPmv2AG8H";
-	$json=array();
-        include("index.php"); 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <title>Factura</title>
 
-$conexionA = mysqli_connect($hostname_localhost,$username_localhost,$password_localhost,$database_localhost);
 
-	$consultaA="select * from asiento order by idasiento;";
-		$resultadoA=mysqli_query($conexionA,$consultaA);
-		if($conexionA){
-			echo "<table>";
-			echo "<th> idempresa</th>";
-			echo "<th> idasiento</th>";
-			echo "<th> fecasiento</th>";
-			echo "<th> idoperacion</th>";
-			echo "<th> monto</th>";
-			
-			while($registroA=mysqli_fetch_array($resultadoA)){
-				$result["idempresa"]=$registroA['idempresa'];
-				$result["idasiento"]=$registroA['idasiento'];
-				$result["fecasiento"]=$registroA['fecasiento'];
-				$result["idoperacion"]=$registroA['idoperacion'];
-				$result["monto"]=$registroA['monto'];
-				$json['Clasificador'][]=$result;
-				
-				echo "<tr>";
-					echo "<td>".$registroA['idempresa']." </td>";
-					echo "<td>".$registroA['idasiento']." </td>";
-					echo "<td>".$registroA['fecasiento']." </td>";
-					echo "<td>".$registroA['idoperacion']." </td>";
-					echo "<td>".$registroA['monto']." </td>";
-				echo "</tr>";
-			}
-			
-			echo "</table>";
-			
-			json_encode($json);
-			mysqli_close($conexionA);
-		}
-		else{
-			echo "error";
-		}
-			
-	?>
+<script>
+
+
+
+  var idCliente;
+  var nombreCliente ;
+  var direccionCliente; 
+  var telefonoCliente;
+  var nombreProducto;
+  var precio;
+  var cantidad;
+  var total;
+  var subtotal;
+  var p=0;
+  var iva;
+  var subtotalP=0;
+  var fecha= new Date();
+  var imprimir;
+  var numero_Factura=0;
+
+
+function generarFactura(){
+
+  
+  idCliente=document.getElementById("idCliente").value;
+  nombreCliente=document.getElementById("nombreCliente").value;
+  direccionCliente=document.getElementById("direccionCliente").value;
+  telefonoCliente=document.getElementById("telefonoCliente").value;
+
+ 
+  
+  	document.write(fecha.getDate() + "/" + (fecha.getMonth()+1) + "/" + fecha.getFullYear()+"</br>"+"</br>"+"</br>");
+	document.write("Identificacion del Cliente:"+'&nbsp;'+idCliente+"<br>"+"<br>");
+  	document.write("Nombre del Cliente:"+'&nbsp;'+nombreCliente+"<br>"+"<br>");
+  	document.write("Direccion:"+'&nbsp;'+direccionCliente+"<br>"+"<br>");
+  	document.write("Telefono:"+'&nbsp;'+telefonoCliente+"<br>"+"<br>"+"<br>");
+  
+  
+	for (subtotal=0; nombreProducto != "*"; subtotal++) {
+
+
+		nombreProducto=prompt('Ingrese Nombre del Producto');
+		document.write("Nombre Producto:  "+'&nbsp;'+nombreProducto+'&nbsp;'+'&nbsp;');
+
+		precio=parseFloat(prompt('Ingrese Precio'));
+		document.write("Precio:  "+'&nbsp;'+precio+'&nbsp;'+'&nbsp;');
+
+		cantidad=parseInt(prompt('Ingrese Cantidad'));
+		document.write("Cantidad:  "+'&nbsp;'+cantidad+'&nbsp;'+'&nbsp;');
+
+
+		nombreProducto=prompt('Para terminar pulse cualquier tecla para continuar');
+
+		subtotal=precio*cantidad;
+		subtotalP=subtotalP+parseInt(subtotal);
+		iva=subtotalP*0.16;
+		total=subtotalP+iva;
+		
+
+		document.write("SubTotal :"+'&nbsp;'+subtotal+"<br>"+"<br>"+"<br>");
+  
+
+} 
+document.write("Subtotal : "+'&nbsp;'+subtotalP+"<br>"+"<br>");
+document.write("Iva 16% :"+'&nbsp;'+iva+"<br>"+"<br>");
+document.write("Total :"+'&nbsp;'+total+"<br>"+"<br>");
+document.write('<button onclick="window.print()">Imprimir Factura</button>');
+
+}
+
+generarFactura()
+
+
+</script>
+
+
+<h2>Factura</h2>
+
+</head>
+<body>
+    
+    Numero Id <br><input type="text" name="idCliente" id="idCliente" placeholder="idCliente"/><br><br>
+    Nombre Cliente <br><input type="text" name="nombreCliente" id="nombreCliente" placeholder="Nombre"/><br><br>
+    Direccion <br><input type="text" name="direccionCliente" id="direccionCliente" placeholder="Direccion"/><br><br>
+    Telefono <br><input type="text" name="telefonoCliente" id="telefonoCliente" placeholder="Telefono"/><br><br>
+   <input type="button"  name="Continuar" onclick="generarFactura()"   value="Continuar"/>
+
+</body>
+</html>

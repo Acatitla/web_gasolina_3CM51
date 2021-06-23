@@ -1,0 +1,38 @@
+Num.Pedido,ES,Fecha Programada,Hora Programada,Cantidad Solicitada,Tipo,Persona Requiere,Persona Autoriza,Entregado
+1,2247,2021-03-12,6:45:00,34447.87,Premium,Rosy,Rosy,Si
+2,4084,2021-03-12,10:34:00,34026.90,Premium,Valentin Reyna,,Si
+3,5460,2021-03-12,2:22:00,30976.00,Premium,Carlos,,Si
+4,5826,2021-03-12,8:20:00,30133.10,Premium,Juan de Dios Ramirez,,Si
+5,5460,2021-03-16,6:30:00,31300.00,Premium,Carlos - Palmas,,Si
+6,5922,2021-03-16,13:00:00,31304.17,Premium,Raul Ramirez,,Si
+7,3962,2021-03-19,18:00:00,31600.00,Premium,Carlos,,Si
+8,5460,2021-03-21,9:00:00,31342.82,Premium,Carlos - Palmas,,Si
+9,5826,2021-03-22,6:30:00,31300.00,Premium,Juan de Dios Ramirez,,Si
+10,2247,2021-03-22,6:30:00,31274.49,Premium,Marcelino,,Si
+11,5460,2021-03-24,22:30:00,31087.49,Premium,Carlos,,Si
+12,4084,2021-03-27,6:00:00,31000.00,Premium,Valentin Reyna,Monse Cristobal,Si
+13,3962,2021-03-27,6:00:00,31000.00,Premium,Raul Ramirez,Monse Cristobal,Si
+14,5460,2021-03-29,6:30:00,31000.00,Premium,Carlos,Rosy,Si
+15,5826,2021-03-30,16:00:00,31000.00,Premium,Juan de Dios Ramirez,Rosy,Si
+16,5922,2021-03-30,6:30:00,31000.00,Premium,Raul Ramirez,Rosy,Si
+17,5460,2021-04-02,6:00:00,31000.00,Premium,Carlos,Rosy,Si
+18,2247,2021-04-07,6:00:00,31000.00,Premium,Marcelino,Rosy,Si
+19,4084,2021-04-07,6:00:00,31000.00,Premium,Valentin Reyna Almaguer,Rosy,Si
+20,5460,2021-04-07,6:00:00,31000.00,Premium,Carlos,Rosy,Si
+21,5460,2021-04-07,6:00:00,31000.00,Regular,Carlos,Rosy,Si
+22,3962,2021-04-07,6:00:00,31000.00,Premium,Raul Ramirez,Rosy,Si
+23,3962,2021-04-07,6:00:00,31000.00,Regular,Raul Ramirez,Rosy,Si
+24,5826,2021-04-07,6:00:00,31000.00,Regular,Juan de Dios Ramirez,Rosy,Si
+25,2247,2021-04-08,6:00:00,31000.00,Regular,Marcelino,Rosy,Si
+26,4084,2021-04-08,6:00:00,31000.00,Regular,Valentin Reyna Almaguer,Rosy,Si
+27,5826,2021-04-12,6:00:00,31000.00,Premium,Juan de Dios Ramirez,Rosy,Si
+28,5460,2021-04-11,22:00:00,31000.00,Premium,Carlos,Rosy,Si
+29,4084,2021-04-13,14:21:30,31000.00,Premium,Valentin Reyna Almaguer,Rosy,Si
+30,3962,2021-04-14,6:00:00,31000.00,Premium,Raul Ramirez,Rosy,Si
+31,2247,2021-04-15,6:00:00,31000.00,Premium,Marcelino,Rosy,Si
+32,5460,2021-04-15,6:00:00,31000.00,Premium,Carlos,Rosy,Si
+33,5460,2021-04-18,6:00:00,31000.00,Premium,Carlos,Rosy,Si
+34,5922,2021-04-15,12:00:00,31000.00,Premium,Raul Ramirez,Rosy,Si
+35,5826,2021-04-23,6:00:30,31000.00,Premium,Juan de Dios Ramirez,Rosy,Si
+36,5460,2021-04-24,9:02:15,31000.00,Premium,Carlos,Rosy,Si
+37,4084,2021-04-25,9:03:55,31000.00,Premium,Valentin Reyna Almaguer,Rosy,Si

@@ -1,0 +1,38 @@
+NumPedido,ES,Fecha Entrega,Hora Entrega,Nombre Operador,Cantidad Entregada (Netos),Tipo,Diferencia,Factura,Nota,Cumplido
+1,2247,2021-03-12,06:45:00,Mateo Vergara Vargas,33678,Premium,769.87,,credito,Si
+2,4084,2021-03-12,14:22:00,ND,33821.1,Premium,205.8,,credito,Si
+3,5460,2021-03-12,08:20:00,ND,30976,Premium,0,Y1901874,,Si
+4,5826,2021-03-12,10:34:00,ND,30201.7,Premium,-68.6,Y1901875,debito,Si
+5,5460,2021-03-16,06:22:00,Efren Jacobo Hernandez,31737,Premium,-437,,,Si
+6,5922,2021-03-16,13:16:00,Efren Jacobo Hernandez,30784.8,Premium,519.37,,,Si
+7,3962,2021-03-19,13:52:12,ND,31634,Premium,-34,,,Si
+8,5460,2021-03-21,12:00:00,Efren Jacobo Hernandez,31207,Premium,135.82,,,No
+9,5826,2021-03-23,06:00:00,Anibal Hernandez Ramirez,30460,Premium,840,Y1901924,,Si
+10,2247,2021-03-23,09:52:00,Anibal Hernandez Ramirez,31071,Premium,203.49,SCA1901923,,Si
+11,5460,2021-03-24,22:30:00,Manuel Cayetano de la Cruz,31616,Premium,-528.51,,,Si
+12,4084,2021-03-27,06:00:00,Héctor Hugo Martinez Cadena,32096.1,Premium,,,,Si
+13,3962,2021-03-27,06:30:00,Héctor Hugo Martinez Cadena,31095.9,Premium,-95.9,,,Si
+14,5460,2021-03-30,00:53:00,Héctor Hugo Martinez Cadena,31824,Premium,-824,,,No
+15,5826,2021-03-31,17:28:00,Narciso Jaochin,32422.6,Premium,-1422.6,,,Si
+16,5922,2021-03-30,15:44:00,ND,30784.7,Premium,215.3,Y1901962,,Si
+17,5460,2021-04-01,02:43:00,ND,34364,Premium,-3364,,,Si
+18,2247,2021-04-07,06:40:00,Marcos Martines Jimenez,30431,Premium,569,,,Si
+19,4084,2021-04-07,10:57:00,Marcos Martinez Jimenez,30987.7,Premium,12.3,,,Si
+20,5460,2021-04-08,03:00:00,,27651,Premium,3349,,,Si
+21,5460,2021-04-08,01:35:00,,30419,Regular,31000,,,Si
+22,3962,2021-04-07,22:40:23,Moisés Benjamín Bosques Magaña,29545.8,Premium,1454.2,,No quisieron firmar de recibido.,Si
+23,3962,2021-04-08,00:14:25,,33678.7,Regular,-2678.7,,,Si
+24,5826,2021-04-07,06:00:00,Mateo Vergara Vargas,34007.5,Regular,-3007.5,,,Si
+25,2247,2021-04-09,06:20:00,Mateo Vergara Vargas,33485,Regular,-2485,,,Si
+26,4084,2021-04-09,12:31:38,,33700,Regular,-2700,,,Si
+27,5826,2021-04-13,08:06:00,Hector Hugo Martínez Cadena,30905.4,Premium,31000,,Sellos de unidad equivocados,Si
+28,5460,2021-04-13,18:00:00,Hector Hugo Martinez Cadena,31479,Premium,-479,,,No
+29,4084,2021-04-13,13:15:00,Manuel Cayetano de la Cruz,30702.5,Premium,297.5,,,Si
+30,3962,2021-04-13,11:13:10,Manuel Cayetano de la Cruz,30353.3,Premium,646.7,,,Si
+31,2247,2021-04-15,07:54:00,Alfredo Baldovino Robles,30484,Premium,516,,,Si
+32,5460,2021-04-15,06:00:00,Alfredo Baldovino Robles,31892,Premium,-892,,,Si
+33,5460,2021-04-19,15:38:00,Alfredo Baldovino Robles,31589,Premium,-589,,,Si
+34,5922,2021-04-15,12:00:00,,30574.3,Premium,425.7,,,Si
+35,5826,2021-04-24,17:30:00,Javier Ahuatl Aramburo,31720.7,Premium,-720.7,,,No
+36,5460,2021-04-25,12:05:00,Javier Ahuatl Aramburo,32312,Premium,-1312,,WB042221-327,Si
+37,4084,2021-04-25,10:00:00,ND,30794.8,Premium,205.2,,,Si
